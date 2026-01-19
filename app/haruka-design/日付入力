@@ -1,0 +1,338 @@
+import React, {useState} from "react";
+export default (props) => {
+	const [input1, onChangeInput1] = useState('');
+	const [input2, onChangeInput2] = useState('');
+	return (
+		<div className="flex flex-col bg-white">
+			<div className="self-stretch">
+				<div className="self-stretch relative">
+					<div className="flex flex-col items-start self-stretch bg-white pt-[55px]">
+						<div className="flex justify-between items-center self-stretch mb-5 mx-[13px]">
+							<span className="text-black text-sm" >
+								{"←カテゴリ選択"}
+							</span>
+							<span className="text-black text-xl" >
+								{"課題"}
+							</span>
+							<div className="w-[95px] h-[13px]">
+							</div>
+						</div>
+						<span className="text-[#8E8E93] text-xl mb-[38px] ml-[13px]" >
+							{"内容を入力"}
+						</span>
+						<span className="text-[#6A6A6A] text-sm mb-[21px] ml-3.5" >
+							{"日付/締切"}
+						</span>
+						<div className="flex items-center self-stretch mb-[34px] ml-[11px] mr-6 gap-10">
+							<div className="flex flex-1 flex-col items-center">
+								<span className="text-black text-xl" >
+									{"2026/1/22(木)　　v"}
+								</span>
+								<div className="self-stretch bg-[#AEAEB2] h-[1px]">
+								</div>
+							</div>
+							<div className="flex flex-col shrink-0 items-start gap-0.5">
+								<span className="text-black text-xl" >
+									{"17:00　　　v"}
+								</span>
+								<div className="bg-[#AEAEB2] w-[132px] h-[1px]">
+								</div>
+							</div>
+						</div>
+						<span className="text-[#8E8E93] text-sm mb-[22px] ml-3" >
+							{"通知"}
+						</span>
+						<span className="text-black text-xl mb-[3px] ml-4" >
+							{"１日前　　　v"}
+						</span>
+						<div className="bg-[#AEAEB2] w-[140px] h-[1px] mb-[201px] ml-[11px]">
+						</div>
+						<div className="flex flex-col items-center self-stretch bg-white pt-4 mb-4 rounded-2xl border border-solid border-[#D9D9D9]">
+							<div className="flex items-center self-stretch mx-4 gap-4">
+								<img
+									src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/yVmOXc9okk/6rgbz62g_expires_30_days.png"} 
+									className="w-9 h-9 object-fill"
+								/>
+								<div className="flex flex-1 items-center gap-2">
+									<div className="flex flex-1 justify-between items-center bg-white pr-1.5 rounded-lg border border-solid border-[#D9D9D9]">
+										<input
+											placeholder={"Sep"}
+											value={input1}
+											onChange={(event)=>onChangeInput1(event.target.value)}
+											className="flex-1 self-stretch text-[#1E1E1E] bg-transparent text-base py-1.5 pl-1.5 mr-1 border-0"
+										/>
+										<img
+											src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/yVmOXc9okk/jh0miek6_expires_30_days.png"} 
+											className="w-4 h-4 rounded-lg object-fill"
+										/>
+									</div>
+									<div className="flex flex-1 justify-between items-center bg-white pr-1.5 rounded-lg border border-solid border-[#D9D9D9]">
+										<input
+											placeholder={"2025"}
+											value={input2}
+											onChange={(event)=>onChangeInput2(event.target.value)}
+											className="flex-1 self-stretch text-[#1E1E1E] bg-transparent text-base py-1.5 pl-1.5 mr-1 border-0"
+										/>
+										<img
+											src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/yVmOXc9okk/4gz2q102_expires_30_days.png"} 
+											className="w-4 h-4 rounded-lg object-fill"
+										/>
+									</div>
+								</div>
+								<img
+									src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/yVmOXc9okk/kkkz43jk_expires_30_days.png"} 
+									className="w-9 h-9 object-fill"
+								/>
+							</div>
+							<div className="flex flex-col items-start pt-4 mb-[39px]">
+								<div className="flex items-center gap-[1px]">
+									<div className="flex flex-col shrink-0 items-start px-3">
+										<span className="text-[#757575] text-xs" >
+											{"Su"}
+										</span>
+									</div>
+									<div className="flex flex-col shrink-0 items-start px-[11px]">
+										<span className="text-[#757575] text-xs" >
+											{"Mo"}
+										</span>
+									</div>
+									<div className="flex flex-col shrink-0 items-start px-[13px]">
+										<span className="text-[#757575] text-xs" >
+											{"Tu"}
+										</span>
+									</div>
+									<div className="flex flex-col shrink-0 items-start px-[11px]">
+										<span className="text-[#757575] text-xs" >
+											{"We"}
+										</span>
+									</div>
+									<div className="flex flex-col shrink-0 items-start px-[13px]">
+										<span className="text-[#757575] text-xs" >
+											{"Th"}
+										</span>
+									</div>
+									<div className="flex flex-col shrink-0 items-start px-3.5">
+										<span className="text-[#757575] text-xs" >
+											{"Fr"}
+										</span>
+									</div>
+									<div className="flex flex-col shrink-0 items-start px-3">
+										<span className="text-[#757575] text-xs" >
+											{"Sa"}
+										</span>
+									</div>
+								</div>
+								<div className="flex flex-col items-start gap-[1px]">
+									<div className="flex items-center gap-[1px]">
+										<div className="w-10 h-10 rounded-lg">
+										</div>
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-4 rounded-lg">
+											<span className="text-[#1E1E1E] text-base" >
+												{"1"}
+											</span>
+										</div>
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-[15px] rounded-lg">
+											<span className="text-[#1E1E1E] text-base" >
+												{"2"}
+											</span>
+										</div>
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-3.5 rounded-lg">
+											<span className="text-[#1E1E1E] text-base" >
+												{"3"}
+											</span>
+										</div>
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-3.5 rounded-lg">
+											<span className="text-[#1E1E1E] text-base" >
+												{"4"}
+											</span>
+										</div>
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-[15px] rounded-lg">
+											<span className="text-[#1E1E1E] text-base" >
+												{"5"}
+											</span>
+										</div>
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-[15px] rounded-lg">
+											<span className="text-[#1E1E1E] text-base" >
+												{"6"}
+											</span>
+										</div>
+									</div>
+									<div className="flex items-center gap-[1px]">
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-[15px] rounded-lg">
+											<span className="text-[#1E1E1E] text-base" >
+												{"7"}
+											</span>
+										</div>
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-[15px] rounded-lg">
+											<span className="text-[#1E1E1E] text-base" >
+												{"8"}
+											</span>
+										</div>
+										<button className="flex flex-col shrink-0 items-start bg-[#2C2C2C] text-left py-[9px] px-[15px] rounded-lg border-0"
+											onClick={()=>alert("Pressed!")}>
+											<span className="text-neutral-100 text-base" >
+												{"9"}
+											</span>
+										</button>
+										<button className="flex flex-col shrink-0 items-start bg-neutral-100 text-left py-[9px] px-[11px] rounded-lg border-0"
+											onClick={()=>alert("Pressed!")}>
+											<span className="text-[#2C2C2C] text-base" >
+												{"10"}
+											</span>
+										</button>
+										<button className="flex flex-col shrink-0 items-start bg-neutral-100 text-left py-[9px] px-3 rounded-lg border-0"
+											onClick={()=>alert("Pressed!")}>
+											<span className="text-[#2C2C2C] text-base" >
+												{"11"}
+											</span>
+										</button>
+										<button className="flex flex-col shrink-0 items-start bg-neutral-100 text-left py-[9px] px-[11px] rounded-lg border-0"
+											onClick={()=>alert("Pressed!")}>
+											<span className="text-[#2C2C2C] text-base" >
+												{"12"}
+											</span>
+										</button>
+										<button className="flex flex-col shrink-0 items-start bg-[#2C2C2C] text-left py-[9px] px-[11px] rounded-lg border-0"
+											onClick={()=>alert("Pressed!")}>
+											<span className="text-neutral-100 text-base" >
+												{"13"}
+											</span>
+										</button>
+									</div>
+									<div className="flex items-center gap-[1px]">
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-[11px] rounded-lg">
+											<span className="text-[#1E1E1E] text-base" >
+												{"14"}
+											</span>
+										</div>
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-[11px] rounded-lg">
+											<span className="text-[#1E1E1E] text-base" >
+												{"15"}
+											</span>
+										</div>
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-[11px] rounded-lg">
+											<span className="text-[#1E1E1E] text-base" >
+												{"16"}
+											</span>
+										</div>
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-[11px] rounded-lg">
+											<span className="text-[#1E1E1E] text-base" >
+												{"17"}
+											</span>
+										</div>
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-[11px] rounded-lg">
+											<span className="text-[#1E1E1E] text-base" >
+												{"18"}
+											</span>
+										</div>
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-[11px] rounded-lg">
+											<span className="text-[#1E1E1E] text-base" >
+												{"19"}
+											</span>
+										</div>
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-2.5 rounded-lg">
+											<span className="text-[#1E1E1E] text-base" >
+												{"20"}
+											</span>
+										</div>
+									</div>
+									<div className="flex items-center gap-[1px]">
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-[11px] rounded-lg">
+											<span className="text-[#1E1E1E] text-base" >
+												{"21"}
+											</span>
+										</div>
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-2.5 rounded-lg">
+											<span className="text-[#1E1E1E] text-base" >
+												{"22"}
+											</span>
+										</div>
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-2.5 rounded-lg">
+											<span className="text-[#1E1E1E] text-base" >
+												{"23"}
+											</span>
+										</div>
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-2.5 rounded-lg">
+											<span className="text-[#1E1E1E] text-base" >
+												{"24"}
+											</span>
+										</div>
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-2.5 rounded-lg">
+											<span className="text-[#1E1E1E] text-base" >
+												{"25"}
+											</span>
+										</div>
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-2.5 rounded-lg">
+											<span className="text-[#1E1E1E] text-base" >
+												{"26"}
+											</span>
+										</div>
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-2.5 rounded-lg">
+											<span className="text-[#1E1E1E] text-base" >
+												{"27"}
+											</span>
+										</div>
+									</div>
+									<div className="flex items-center gap-[1px]">
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-2.5 rounded-lg">
+											<span className="text-[#1E1E1E] text-base" >
+												{"28"}
+											</span>
+										</div>
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-2.5 rounded-lg">
+											<span className="text-[#1E1E1E] text-base" >
+												{"29"}
+											</span>
+										</div>
+										<div className="flex flex-col shrink-0 items-start p-[9px] rounded-lg">
+											<span className="text-[#1E1E1E] text-base" >
+												{"30"}
+											</span>
+										</div>
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-4 rounded-lg">
+											<span className="text-[#B3B3B3] text-base" >
+												{"1"}
+											</span>
+										</div>
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-[15px] rounded-lg">
+											<span className="text-[#B3B3B3] text-base" >
+												{"2"}
+											</span>
+										</div>
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-3.5 rounded-lg">
+											<span className="text-[#B3B3B3] text-base" >
+												{"3"}
+											</span>
+										</div>
+										<div className="flex flex-col shrink-0 items-start py-[9px] px-3.5 rounded-lg">
+											<span className="text-[#B3B3B3] text-base" >
+												{"4"}
+											</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div className="self-stretch bg-[#AEAEB2] h-[1px] absolute top-[84px] right-[3px] left-[3px]">
+					</div>
+					<div className="self-stretch bg-[#AEAEB2] h-[1px] absolute top-[124px] right-[3px] left-[3px]">
+					</div>
+					<div className="flex flex-col items-start self-stretch bg-[#D9D9D9] absolute bottom-[347px] right-[1px] left-[1px] pt-3.5 pl-[23px]">
+						<div className="flex items-center mb-[3px]">
+							<span className="text-[#6A6A6A] text-base mr-[59px]" >
+								{"キャンセル"}
+							</span>
+							<span className="text-black text-base mr-[77px]" >
+								{"日付を選択"}
+							</span>
+							<span className="text-[#0050FF] text-base" >
+								{"完了"}
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	)
+}

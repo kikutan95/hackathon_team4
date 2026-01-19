@@ -1,0 +1,68 @@
+import React from "react";
+export default (props) => {
+	return (
+		<div className="flex flex-col bg-white">
+			<div className="self-stretch">
+				<div className="self-stretch relative">
+					<div className="flex flex-col items-start self-stretch bg-white py-[62px]">
+						<div className="flex justify-between items-center self-stretch mb-[18px] mx-[13px]">
+							<span className="text-black text-sm" >
+								{"←カテゴリ選択"}
+							</span>
+							<span className="text-black text-xl" >
+								{"課題"}
+							</span>
+							<div className="w-[95px] h-[13px]">
+							</div>
+						</div>
+						<div className="flex justify-between items-center self-stretch mb-[29px] mx-[13px]">
+							<span className="text-[#8E8E93] text-xl" >
+								{"内容を入力"}
+							</span>
+							<img
+								src={"https://storage.googleapis.com/tagjs-prod.appspot.com/v1/yVmOXc9okk/7irnytke_expires_30_days.png"} 
+								className="w-[30px] h-[29px] object-fill"
+							/>
+						</div>
+						<span className="text-[#6A6A6A] text-sm mb-[21px] ml-3.5" >
+							{"日付/締切"}
+						</span>
+						<div className="flex items-center self-stretch mb-[34px] ml-[11px] mr-6 gap-10">
+							<div className="flex flex-1 flex-col items-center">
+								<span className="text-black text-xl" >
+									{"2026/1/22(木)　　v"}
+								</span>
+								<div className="self-stretch bg-[#AEAEB2] h-[1px]">
+								</div>
+							</div>
+							<div className="flex flex-col shrink-0 items-start gap-0.5">
+								<span className="text-black text-xl" >
+									{"17:00　　　v"}
+								</span>
+								<div className="bg-[#AEAEB2] w-[132px] h-[1px]">
+								</div>
+							</div>
+						</div>
+						<span className="text-[#8E8E93] text-sm mb-[22px] ml-3" >
+							{"通知"}
+						</span>
+						<span className="text-black text-xl mb-[3px] ml-4" >
+							{"１日前　　　v"}
+						</span>
+						<div className="bg-[#AEAEB2] w-[140px] h-[1px] mb-[433px] ml-[11px]">
+						</div>
+						<div className="flex flex-col items-center self-stretch bg-[#69A9E1] py-[11px]">
+							<span className="text-white text-2xl" >
+								{"新規作成"}
+							</span>
+						</div>
+					</div>
+					<div className="self-stretch bg-[#AEAEB2] h-[1px] absolute top-[84px] right-[3px] left-[3px]">
+					</div>
+					<div className="self-stretch bg-[#AEAEB2] h-[1px] absolute top-[124px] right-[3px] left-[3px]">
+					</div>
+				</div>
+			</div>
+		</div>
+	)
+}
