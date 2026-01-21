@@ -13,12 +13,7 @@ export default function Page() {
   const [screen, setScreen] = useState<Screen>("category");
   const [category, setCategory] = useState<string>("");
 
-  // 🔹 登録完了時の処理（子から呼ばれる）
   const handleComplete = () => {
-    // 本来はここで Supabase / API に保存
-    // await saveTodo({ category, date, time, remind });
-
-    // 登録後に /top へ
     router.push("/top");
   };
 
