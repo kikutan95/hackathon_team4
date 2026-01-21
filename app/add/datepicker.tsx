@@ -74,7 +74,7 @@ const BottomSheetDatePicker: React.FC<BottomSheetDatePickerProps> = ({
               onClick={() => onSelectDay(day)}
             >
               {isSelected ? (
-                <div className="size-10 rounded-full bg-primary text-white font-bold flex items-center justify-center shadow-lg shadow-primary/30">
+                <div className="size-10 rounded-full bg-[#69A9E2] text-white font-bold flex items-center justify-center shadow-lg shadow-primary/30">
                   {day}
                 </div>
               ) : (
@@ -94,7 +94,7 @@ const BottomSheetDatePicker: React.FC<BottomSheetDatePickerProps> = ({
           Cancel
         </button>
         <button
-          className="flex-1 h-12 rounded-xl bg-primary text-white font-bold shadow-lg shadow-primary/20"
+          className="flex-1 h-12 rounded-xl bg-[#69A9E2] text-white font-bold shadow-lg shadow-primary/20"
           onClick={onClose}
         >
           Apply
