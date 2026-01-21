@@ -19,7 +19,6 @@ const TimePicker: React.FC<Props> = ({
   const touchStartY = useRef<number | null>(null);
 
   /* ========= ユーティリティ ========= */
-
   const getLoopedNumbers = (
     current: number,
     range: number,
@@ -34,7 +33,6 @@ const TimePicker: React.FC<Props> = ({
     (value + range) % range;
 
   /* ========= 操作ハンドラ ========= */
-
   const handleWheel = (
     e: React.WheelEvent,
     setter: (v: number) => void,
@@ -75,7 +73,7 @@ const TimePicker: React.FC<Props> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-end justify-center bg-black/30">
-      <div className="w-full max-w-md bg-white rounded-t-[1.5rem] shadow-2xl overflow-hidden">
+      <div className="w-full bg-white rounded-t-[1.5rem] shadow-2xl overflow-hidden animate-slideUp">
 
         {/* ハンドル */}
         <div className="pt-3 pb-2 flex justify-center">
@@ -84,10 +82,7 @@ const TimePicker: React.FC<Props> = ({
 
         {/* ヘッダー */}
         <div className="flex items-center px-4 pb-2">
-          <button
-            className="text-primary text-[17px]"
-            onClick={onClose}
-          >
+          <button className="text-primary text-[17px]" onClick={onClose}>
             キャンセル
           </button>
 
@@ -114,9 +109,7 @@ const TimePicker: React.FC<Props> = ({
               className="flex-1 text-center"
               onWheel={(e) => handleWheel(e, setHour, hour, 24)}
               onTouchStart={handleTouchStart}
-              onTouchEnd={(e) =>
-                handleTouchEnd(e, setHour, hour, 24)
-              }
+              onTouchEnd={(e) => handleTouchEnd(e, setHour, hour, 24)}
             >
               {getLoopedNumbers(hour, 24).map((h) => (
                 <p
@@ -141,9 +134,7 @@ const TimePicker: React.FC<Props> = ({
               className="flex-1 text-center"
               onWheel={(e) => handleWheel(e, setMinute, minute, 60)}
               onTouchStart={handleTouchStart}
-              onTouchEnd={(e) =>
-                handleTouchEnd(e, setMinute, minute, 60)
-              }
+              onTouchEnd={(e) => handleTouchEnd(e, setMinute, minute, 60)}
             >
               {getLoopedNumbers(minute, 60).map((m) => (
                 <p
