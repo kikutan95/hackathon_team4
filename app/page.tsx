@@ -25,13 +25,6 @@ export default function Home() {
               <span className="text-white text-[32px] font-bold">新規登録</span>
             </Link>
           </div>
-
-          {/* 補助リンク */}
-          <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-            <Link href="/top" className="text-zinc-500 hover:underline">
-              トップページへ
-            </Link>
-          </div>
         </div>
 
       </main>
